@@ -15,10 +15,7 @@ import Suwayda from '../Components/States/Suwayda';
 import Tartus from '../Components/States/Tartus';
 
 function Home() {
-
-
     return (
-
         <MapView>
             <Idlib />
             <Aleppo />
