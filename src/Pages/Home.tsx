@@ -17,7 +17,7 @@ function Home() {
             <Header />
             <MapView />
             <Footer />
-            <audio ref={audioRef} src="/rafraf.mp3" preload="auto"></audio>
+
 
         </>
 
@@ -26,4 +26,4 @@ function Home() {
 
 export default Home
 
-{/**/ }
+{/*<audio ref={audioRef} src="/rafraf.mp3" preload="auto"></audio>*/ }
