@@ -1,37 +1,26 @@
+import { useEffect, useRef } from 'react';
+import Footer from '../Components/Footer';
 import MapView from '../Components/MapView';
-import Aleppo from '../Components/States/Aleppo';
-import Damascus from '../Components/States/Damascus';
-import Daraa from '../Components/States/Daraa';
-import DayrAzZawr from '../Components/States/DayrAzZawr';
-import Hama from '../Components/States/Hama';
-import Hasaka from '../Components/States/Hasaka';
-import Homs from '../Components/States/Homs';
-import Idlib from '../Components/States/Idlib';
-import Latakia from '../Components/States/Latakia';
-import Quneitra from '../Components/States/Quneitra';
-import Raqqah from '../Components/States/Raqqah';
-import RefDamascus from '../Components/States/RefDamascus';
-import Suwayda from '../Components/States/Suwayda';
-import Tartus from '../Components/States/Tartus';
+import Header from '../Components/Header';
+
 
 function Home() {
+    const audioRef = useRef<HTMLAudioElement>(null);
+    useEffect(() => {
+        // Play sound when the page loads
+        if (audioRef.current) {
+            audioRef.current.play();
+        }
+    }, []);
     return (
-        <MapView>
-            <Idlib />
-            <Aleppo />
-            <Homs />
-            <Hama />
-            <Damascus />
-            <RefDamascus />
-            <Daraa />
-            <Suwayda />
-            <Quneitra />
-            <Raqqah />
-            <Hasaka />
-            <DayrAzZawr />
-            <Tartus />
-            <Latakia />
-        </MapView>
+        <>
+            <Header />
+            <MapView />
+            <Footer />
+            <audio ref={audioRef} src="/rafraf.mp3" preload="auto"></audio>
+
+        </>
+
     )
 }
 
