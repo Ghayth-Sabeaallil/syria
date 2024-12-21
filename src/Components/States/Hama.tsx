@@ -2,7 +2,7 @@ import { useState } from "react";
 import { StateProps } from "../../lib/types"
 
 const Hama = ({ handleClick }: StateProps) => {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState<boolean>(false);
 
     return (
         <path className="animate-[fadeIn_3s_ease-in]" onMouseEnter={() => setIsHovered(true)}
