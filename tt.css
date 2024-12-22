@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.camera-zoom-container {
+  perspective: 1000px; /* Adds a camera-like perspective */
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+}
+
+.camera-zoom-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform-origin: center;
+}
+
+.camera-zoom-container:hover .camera-zoom-image {
+  transform: scale(0.8) translateZ(-50px); /* Simulates zooming out */
+  filter: brightness(0.9); /* Optional: Slight dimming for effect */
+}
