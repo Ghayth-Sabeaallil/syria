@@ -17,6 +17,8 @@ import Tartus from '../Components/States/Tartus';
 const MapView = () => {
     const svgRef = useRef<SVGSVGElement>(null);
     const [viewBox, setViewBox] = useState<number[]>([0, 0, 1000, 918]);
+    const [hover, setHover] = useState<boolean>(true);
+
 
     let animationFrame: number;
 
@@ -34,46 +36,50 @@ const MapView = () => {
             const interpolated = start.map(
                 (val, index) => val + (end[index] - val) * progress
             );
-
             if (svgRef.current) {
                 svgRef.current.setAttribute("viewBox", interpolated.join(" "));
             }
-
             if (progress < 1) {
                 animationFrame = requestAnimationFrame(animate);
             }
         };
-
         cancelAnimationFrame(animationFrame); // Cancel any ongoing animations
         animationFrame = requestAnimationFrame(animate);
     };
 
     const handlePathClick = (event: React.MouseEvent<SVGPathElement>) => {
+        setHover(false);
         if (!svgRef.current) return;
+        console.log(event.target);
         const path = event.target as SVGPathElement;
         const bbox = path.getBBox();
         const padding = 35;
         smoothViewBoxTransition(viewBox, [bbox.x - padding, bbox.y - padding, bbox.width + 2 * padding, bbox.height + 2 * padding], 900);
         setViewBox([bbox.x - padding, bbox.y - padding, bbox.width + 2 * padding, bbox.height + 2 * padding]);
+    };
 
-
+    const handlePathDoubleClick = () => {
+        setHover(true);
+        if (!svgRef.current) return;
+        smoothViewBoxTransition(viewBox, [0, 0, 1000, 918], 900);
+        setViewBox([0, 0, 1000, 918]);
     };
     return (
-        <svg ref={svgRef} baseProfile="tiny" fill="#36784c" height="99vh" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" strokeWidth="1" version="1.2" viewBox="0 0 1000 918" width="100vw" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 7s ease" }}>
-            <Idlib handleClick={handlePathClick} />
-            <Aleppo handleClick={handlePathClick} />
-            <Homs handleClick={handlePathClick} />
-            <Hama handleClick={handlePathClick} />
-            <Damascus handleClick={handlePathClick} />
-            <RefDamascus handleClick={handlePathClick} />
-            <Daraa handleClick={handlePathClick} />
-            <Suwayda handleClick={handlePathClick} />
-            <Quneitra handleClick={handlePathClick} />
-            <Raqqah handleClick={handlePathClick} />
-            <Hasaka handleClick={handlePathClick} />
-            <DayrAzZawr handleClick={handlePathClick} />
-            <Tartus handleClick={handlePathClick} />
-            <Latakia handleClick={handlePathClick} />
+        <svg ref={svgRef} baseProfile="tiny" fill="#326640" height="99vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" version="1.2" viewBox="0 0 1000 918" width="100vw" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 7s ease" }}>
+            <Idlib handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} hovered={hover} />
+            <Aleppo handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Homs handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Hama handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Damascus handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <RefDamascus handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Daraa handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Suwayda handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Quneitra handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Raqqah handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Hasaka handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <DayrAzZawr handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Tartus handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
+            <Latakia handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
         </svg>
     )
 }

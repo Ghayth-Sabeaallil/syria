@@ -1,4 +1,5 @@
 export type StateProps = {
     handleClick?: React.MouseEventHandler<SVGPathElement>;
-    isCLicked?: boolean;
+    handleDoubleClick?: React.MouseEventHandler<SVGPathElement>;
+    hovered?: boolean;
 };
