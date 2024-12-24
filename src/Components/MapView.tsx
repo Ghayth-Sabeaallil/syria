@@ -48,7 +48,6 @@ const MapView = () => {
 
     const handlePathClick = (event: React.MouseEvent<SVGPathElement>) => {
         if (!svgRef.current) return;
-        console.log(event.target);
         const path = event.target as SVGPathElement;
         const bbox = path.getBBox();
         const padding = 35;
