@@ -9,6 +9,23 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(41, 41, 41, 0.5), rgba(41, 41, 41, 0.5)),
-    url("/bg.jpg") no-repeat center center/cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: slideshow 15s ease-in-out infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url("/hama.jpg");
+  }
+  33% {
+    background-image: url("/aleppo.jpg");
+  }
+  66% {
+    background-image: url("/palmyra.jpg");
+  }
+  100% {
+    background-image: url("/lattakia.jpg");
+  }
 }

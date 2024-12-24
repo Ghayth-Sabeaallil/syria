@@ -17,8 +17,6 @@ function Home() {
             <Header />
             <MapView />
             <Footer />
-
-
         </>
 
     )
