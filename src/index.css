@@ -6,30 +6,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
+
 #root {
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(rgba(36, 35, 35, 0.5), rgba(39, 39, 39, 0.5)),
+    url("/bg.jpg");
   background-size: cover;
-  animation: slideshow 15s ease-in-out infinite;
-}
-
-@keyframes slideshow {
-  0% {
-    background-image: url("/hama.jpg");
-  }
-  33% {
-    background-image: url("/aleppo.jpg");
-  }
-  66% {
-    background-image: url("/palmyra.jpg");
-  }
-  100% {
-    background-image: url("/lattakia.jpg");
-  }
+  background-position: center;
+  background-blend-mode: darken;
 }

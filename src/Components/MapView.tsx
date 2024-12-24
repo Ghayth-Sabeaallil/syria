@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Aleppo from '../Components/States/Aleppo';
 import Damascus from '../Components/States/Damascus';
 import Daraa from '../Components/States/Daraa';
@@ -17,8 +17,13 @@ import Tartus from '../Components/States/Tartus';
 const MapView = () => {
     const svgRef = useRef<SVGSVGElement>(null);
     const [viewBox, setViewBox] = useState<number[]>([0, 0, 1000, 918]);
+    const [width, setWidth] = useState<number>();
 
 
+    useEffect(() => {
+        const screen: number = window.innerWidth;
+        setWidth(screen);
+    }, []);
     let animationFrame: number;
 
     const smoothViewBoxTransition = (
@@ -50,9 +55,11 @@ const MapView = () => {
         if (!svgRef.current) return;
         const path = event.target as SVGPathElement;
         const bbox = path.getBBox();
-        const padding = 35;
-        smoothViewBoxTransition(viewBox, [bbox.x + padding, bbox.y - padding, bbox.width + 2 * padding, bbox.height + 2 * padding], 900);
-        setViewBox([bbox.x + padding, bbox.y - padding, bbox.width + 2 * padding, bbox.height + 2 * padding]);
+        smoothViewBoxTransition(viewBox, [bbox.x, bbox.y, bbox.width, bbox.height], 900);
+        setViewBox([bbox.x, bbox.y, bbox.width, bbox.height]);
+        /*
+        
+        */
     };
 
     const handlePathDoubleClick = () => {
@@ -61,7 +68,7 @@ const MapView = () => {
         setViewBox([0, 0, 1000, 918]);
     };
     return (
-        <svg ref={svgRef} baseProfile="tiny" fill="#326640" height="99vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" version="1.2" viewBox="0 0 1000 918" width="100vw" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 2s ease", padding: "25px 10px" }}>
+        <svg ref={svgRef} baseProfile="tiny" fill="#326640" height="100vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100vw" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 2s ease" }}>
             <Idlib handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
             <Aleppo handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
             <Homs handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
