@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import Aleppo from '../Components/States/Aleppo';
 import Damascus from '../Components/States/Damascus';
 import Daraa from '../Components/States/Daraa';
@@ -16,8 +16,6 @@ import Tartus from '../Components/States/Tartus';
 
 const MapView = () => {
     const svgRef = useRef<SVGSVGElement>(null);
-    const [activeState, setActiveState] = useState<boolean>(false);
-
 
     const handlePathClick = (event: React.MouseEvent<SVGPathElement>) => {
         if (!svgRef.current) return;
@@ -39,7 +37,7 @@ const MapView = () => {
         clickedPath.setAttribute('transform', '');
     };
     return (
-        <svg id='mySvg' ref={svgRef} baseProfile="tiny" fill="#326640" height="100vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100vw" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 2s ease" }}>
+        <svg id='mySvg' ref={svgRef} baseProfile="tiny" fill="#326640" height="100%" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100%" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 2s ease", zIndex: "0" }}>
             <Idlib handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
             <Aleppo handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
             <Homs handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />

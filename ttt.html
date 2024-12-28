@@ -3,51 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image with SVG Path Mask</title>
+    <title>Sequential Image Animation with Black Screen</title>
     <style>
-      .image-container {
-        width: 300px;
-        height: 300px;
-        display: inline-block;
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Container styles */
+      .slider {
+        width: 100vw;
+        height: 100vh; /* Adjust height as needed */
+        overflow: hidden;
         position: relative;
+        background: #000; /* Default black background */
       }
 
-      .image-container img {
+      /* Image styles */
+      .slider img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        mask: url(#mask-path); /* Apply the SVG mask */
-        -webkit-mask: url(#mask-path); /* Safari support */
-      }
-
-      /* Optional: adding a background color to demonstrate the shape */
-      .image-container::before {
-        content: "";
+        height: 100%; /* Adjust height as needed */
+        object-fit: cover; /* Ensures the image covers the entire container */
+        object-position: center; /* Centers the image within the container */
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent */
-        mask: url(#mask-path);
-        -webkit-mask: url(#mask-path);
+        opacity: 0; /* Start images hidden */
+        animation: fadeInOutWithBlack 24s infinite;
+      }
+
+      /* Animation keyframes */
+      @keyframes fadeInOutWithBlack {
+        0% {
+          opacity: 0;
+        } /* Hidden */
+        10% {
+          opacity: 1;
+        } /* Fade in */
+        30% {
+          opacity: 1;
+          scale: 1.06;
+        } /* Stay visible */
+        40% {
+          opacity: 0;
+        } /* Fade out */
+        50% {
+          opacity: 0;
+        } /* Black screen */
+        100% {
+          opacity: 0;
+        } /* Hidden */
+      }
+
+      /* Delay each image for proper sequencing */
+      .slider img:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .slider img:nth-child(2) {
+        animation-delay: 4s;
+      }
+      .slider img:nth-child(3) {
+        animation-delay: 8s;
+      }
+      .slider img:nth-child(4) {
+        animation-delay: 12s;
+      }
+      .slider img:nth-child(5) {
+        animation-delay: 16s;
+      }
+      .slider img:nth-child(6) {
+        animation-delay: 20s;
+      }
+      .slider img:nth-child(7) {
+        animation-delay: 24s;
       }
     </style>
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-      <defs>
-        <!-- Define the mask using an SVG path -->
-        <mask id="mask-path" x="0" y="0" width="100%" height="100%">
-          <path
-            d="M10,10 H90 A10,10 0 0,1 110,30 V70 A10,10 0 0,1 90,90 H10 A10,10 0 0,1 0,70 V30 A10,10 0 0,1 10,10 Z"
-          />
-        </mask>
-      </defs>
-    </svg>
-
-    <div class="image-container">
-      <img src="/public/palmyra.jpg" alt="Image" />
+    <div class="slider">
+      <img src="./public/1.jpg" alt="Image 1" />
+      <img src="./public/2.jpg" alt="Image 2" />
+      <img src="./public/3.jpg" alt="Image 3" />
+      <img src="./public/4.jpg" alt="Image 4" />
+      <img src="./public/5.jpg" alt="Image 5" />
+      <img src="./public/6.jpg" alt="Image 6" />
+      <img src="./public/7.jpg" alt="Image 7" />
     </div>
   </body>
 </html>
