@@ -4,7 +4,7 @@ const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-transparent backdrop-blur-lg shadow text-xl text-black font-bold bg-gradient-to-r from-[#076f2c] to-[#6f4b07]">
+        <nav className="text-black font-bold bg-[#646768]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -13,11 +13,11 @@ const Header = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-4">
-                        <a href="#" className="hover:text-blue-400 hover:underline hover:scale-110">الرئيسية</a>
-                        <a href="#" className="hover:text-blue-400 hover:underline hover:scale-110">حول</a>
-                        <a href="#" className="hover:text-blue-400 hover:underline hover:scale-110">خدمات</a>
-                        <a href="#" className="hover:text-blue-400 hover:underline hover:scale-110">اتصل بنا</a>
+                    <div className="hidden md:flex space-x-10">
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">حول</div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">اتصل بنا</div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">السياحة</div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">الرئيسية</div>
                     </div>
 
                     {/* Mobile Menu Button */}

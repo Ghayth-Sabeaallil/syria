@@ -2,7 +2,8 @@ import { useEffect, useRef } from 'react';
 import Footer from '../Components/Footer';
 import MapView from '../Components/MapView';
 import Header from '../Components/Header';
-import { MapContainer } from '../Components/MapContainer';
+import { DiscoverSyria } from '../Components/DiscoverSyria';
+import Container from '../Components/Container';
 
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
     return (
         <>
             <Header />
-            <MapContainer map={<MapView />} />
+            <Container discover={<DiscoverSyria />} />
             <Footer />
         </>
 

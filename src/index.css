@@ -8,35 +8,67 @@
 }
 body {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
-
 .slider {
-  width: 100vw;
-  height: 100vh; /* Adjust height as needed */
-  background-position: center;
-  background-size: 100% 100%;
-  animation: slide 24s linear infinite;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  background: #000; /* Default black background */
 }
 
-/* Animation keyframes */
-@keyframes slide {
+/* Image styles */
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  animation: fadeInOutWithBlack 20s infinite;
+}
+
+@keyframes fadeInOutWithBlack {
   0% {
-    background-image: url("/1.jpg");
-  }
-  20% {
-    background-image: url("/2.jpg");
-  }
+    opacity: 0;
+  } /* Hidden */
+  10% {
+    opacity: 1;
+    scale: 1.05;
+  } /* Fade in */
+  30% {
+    opacity: 1;
+  } /* Stay visible */
   40% {
-    background-image: url("/3.jpg");
-  }
-  60% {
-    background-image: url("/4.jpg");
-  }
-  80% {
-    background-image: url("/5.jpg");
-  }
+    opacity: 0;
+  } /* Fade out */
+  50% {
+    opacity: 0;
+  } /* Black screen */
   100% {
-    background-image: url("/6.jpg");
-  }
+    opacity: 0;
+  } /* Hidden */
+}
+
+/* Delay each image for proper sequencing */
+.slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+.slider img:nth-child(2) {
+  animation-delay: 4s;
+}
+.slider img:nth-child(3) {
+  animation-delay: 8s;
+}
+.slider img:nth-child(4) {
+  animation-delay: 12s;
+}
+.slider img:nth-child(5) {
+  animation-delay: 16s;
+}
+.slider img:nth-child(6) {
+  animation-delay: 20s;
 }
