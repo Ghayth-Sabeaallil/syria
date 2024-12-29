@@ -4,7 +4,7 @@ const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-transparent backdrop-blur-lg shadow text-black">
+        <nav className="bg-transparent backdrop-blur-lg shadow text-xl text-black font-bold bg-gradient-to-r from-[#076f2c] to-[#6f4b07]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -47,7 +47,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-transparent w-full backdrop-blur-lg object-right shadow absolute text-right">
+                <div className="md:hidden bg-transparent w-full backdrop-blur-lg object-right shadow absolute text-right z-50">
                     <a href="#" className="block px-4 py-2 hover:text-blue-400 hover:underline">
                         الرئيسية
                     </a>

@@ -3,91 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sequential Image Animation with Black Screen</title>
+    <title>Background Image Slider with Smooth Opacity</title>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      /* Container styles */
-      .slider {
-        width: 100vw;
-        height: 100vh; /* Adjust height as needed */
-        overflow: hidden;
+      /* Container for the background image slider */
+      .container {
         position: relative;
-        background: #000; /* Default black background */
-      }
-
-      /* Image styles */
-      .slider img {
         width: 100%;
-        height: 100%; /* Adjust height as needed */
-        object-fit: cover; /* Ensures the image covers the entire container */
-        object-position: center; /* Centers the image within the container */
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0; /* Start images hidden */
-        animation: fadeInOutWithBlack 24s infinite;
+        height: 500px; /* Adjust as needed */
+        background-size: cover;
+        background-position: center;
+        animation: slide 50s linear infinite;
       }
 
-      /* Animation keyframes */
-      @keyframes fadeInOutWithBlack {
+      /* Keyframes to change background images with opacity transition */
+
+      @keyframes slide {
         0% {
+          background-image: url("/public/1.jpg");
           opacity: 0;
-        } /* Hidden */
-        10% {
+        }
+        3% {
+          background-image: url("/public/1.jpg");
+          opacity: 0.5;
+        }
+        6% {
+          background-image: url("/public/1.jpg");
           opacity: 1;
-        } /* Fade in */
+        }
+        9% {
+          background-image: url("/public/1.jpg");
+          opacity: 0.5;
+        }
+        12% {
+          background-image: url("/public/1.jpg");
+          opacity: 0;
+        }
+        15% {
+          background-image: url("/public/2.jpg");
+          opacity: 0;
+        }
+        18% {
+          background-image: url("/public/2.jpg");
+          opacity: 0.5;
+        }
+        21% {
+          background-image: url("/public/2.jpg");
+          opacity: 1;
+        }
+        24% {
+          background-image: url("/public/2.jpg");
+          opacity: 0.5;
+        }
+        27% {
+          background-image: url("/public/2.jpg");
+          opacity: 0;
+        }
         30% {
-          opacity: 1;
-          scale: 1.06;
-        } /* Stay visible */
-        40% {
+          background-image: url("/public/3.jpg");
           opacity: 0;
-        } /* Fade out */
-        50% {
-          opacity: 0;
-        } /* Black screen */
-        100% {
-          opacity: 0;
-        } /* Hidden */
-      }
+        }
 
-      /* Delay each image for proper sequencing */
-      .slider img:nth-child(1) {
-        animation-delay: 0s;
-      }
-      .slider img:nth-child(2) {
-        animation-delay: 4s;
-      }
-      .slider img:nth-child(3) {
-        animation-delay: 8s;
-      }
-      .slider img:nth-child(4) {
-        animation-delay: 12s;
-      }
-      .slider img:nth-child(5) {
-        animation-delay: 16s;
-      }
-      .slider img:nth-child(6) {
-        animation-delay: 20s;
-      }
-      .slider img:nth-child(7) {
-        animation-delay: 24s;
+        33% {
+          background-image: url("/public/3.jpg");
+          opacity: 0.5;
+        }
+        36% {
+          background-image: url("/public/3.jpg");
+          opacity: 1;
+        }
+        39% {
+          background-image: url("/public/3.jpg");
+          opacity: 0.5;
+        }
+        42% {
+          background-image: url("/public/3.jpg");
+          opacity: 0;
+        }
+        45% {
+          background-image: url("/public/4.jpg");
+          opacity: 0;
+        }
+        48% {
+          background-image: url("/public/4.jpg");
+          opacity: 0.5;
+        }
+        51% {
+          background-image: url("/public/4.jpg");
+          opacity: 1;
+        }
+        54% {
+          background-image: url("/public/4.jpg");
+          opacity: 0.5;
+        }
+        57% {
+          background-image: url("/public/4.jpg");
+          opacity: 0;
+        }
+        60% {
+          background-image: url("/public/5.jpg");
+          opacity: 0;
+        }
+
+        63% {
+          background-image: url("/public/5.jpg");
+          opacity: 0.5;
+        }
+        66% {
+          background-image: url("/public/5.jpg");
+          opacity: 1;
+        }
+        69% {
+          background-image: url("/public/5.jpg");
+          opacity: 0.5;
+        }
+        72% {
+          background-image: url("/public/5.jpg");
+          opacity: 0;
+        }
+        75% {
+          background-image: url("/public/6.jpg");
+          opacity: 0;
+        }
+        78% {
+          background-image: url("/public/6.jpg");
+          opacity: 0.5;
+        }
+        81% {
+          background-image: url("/public/6.jpg");
+          opacity: 1;
+        }
+        84% {
+          background-image: url("/public/6.jpg");
+          opacity: 0.5;
+        }
+        87% {
+          background-image: url("/public/6.jpg");
+          opacity: 0;
+        }
+        90% {
+          background-image: url("/public/1.jpg");
+          opacity: 0;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="slider">
-      <img src="./public/1.jpg" alt="Image 1" />
-      <img src="./public/2.jpg" alt="Image 2" />
-      <img src="./public/3.jpg" alt="Image 3" />
-      <img src="./public/4.jpg" alt="Image 4" />
-      <img src="./public/5.jpg" alt="Image 5" />
-      <img src="./public/6.jpg" alt="Image 6" />
-      <img src="./public/7.jpg" alt="Image 7" />
-    </div>
+    <!-- Container to hold the background images -->
+    <div class="container"></div>
   </body>
 </html>
