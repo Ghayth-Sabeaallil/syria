@@ -18,6 +18,7 @@ function Home() {
         <>
             <Header />
             <Container discover={<DiscoverSyria />} />
+            <MapView />
             <Footer />
         </>
 
