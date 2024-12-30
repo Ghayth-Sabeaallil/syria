@@ -29,10 +29,10 @@ export const DiscoverSyria = () => {
     };
     return (
         <>
-            <div className="slider items-center flex justify-end p-10 ">
+            <div id="discover" className="slider items-center m-4 flex justify-end p-10 rounded-lg shadow-2xl ">
+                <img src="/3.jpg" alt="Image 3" />
                 <img src="/1.jpg" alt="Image 1" />
                 <img src="/2.jpg" alt="Image 2" />
-                <img src="/3.jpg" alt="Image 3" />
                 <img src="/4.jpg" alt="Image 4" />
                 <img src="/5.jpg" alt="Image 5" />
                 <img src="/6.png" alt="Image 6" />

@@ -9,6 +9,12 @@
 body {
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(
+      rgba(250, 250, 250, 0.5),
+      rgba(250, 250, 250, 0.5)
+    ),
+    url("/bg.jpg");
+  background-size: cover;
 }
 .slider {
   width: 100%;
@@ -27,8 +33,8 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
-  animation: fadeInOutWithBlack 20s infinite;
+  animation: fadeInOutWithBlack 20s 1s infinite;
+  animation-fill-mode: backwards;
 }
 
 @keyframes fadeInOutWithBlack {

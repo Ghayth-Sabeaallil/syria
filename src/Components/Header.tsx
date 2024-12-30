@@ -1,12 +1,15 @@
 import { useState } from "react";
-
+import { FaHeadphones } from "react-icons/fa";
+import { GoHome, } from "react-icons/go";
+import { IoMdInformationCircleOutline } from "react-icons/io";
+import { MdOutlineTravelExplore } from "react-icons/md";
 const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 
 
     return (
-        <nav className="text-black font-bold bg-[#646768]">
+        <nav className="text-black font-bold backdrop-blur bg-transparent border-2 border-black shadow-xl rounded-lg m-4 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -16,10 +19,10 @@ const Header = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-10">
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">حول</div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">اتصل بنا</div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">السياحة</div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:text-white hover:border-white border-r-2 border-l-2">الرئيسية</div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">حول <IoMdInformationCircleOutline size={30} /></div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">اتصل بنا <FaHeadphones size={30} /></div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">السياحة <MdOutlineTravelExplore size={30} /></div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">الرئيسية <GoHome size={30} /> </div>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -49,19 +52,11 @@ const Header = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden bg-transparent w-full backdrop-blur-lg object-right shadow absolute text-right z-50">
-                    <a href="#" className="block px-4 py-2 hover:text-blue-400 hover:underline">
-                        الرئيسية
-                    </a>
-                    <a href="#" className="block px-4 py-2 hover:text-blue-400 hover:underline">
-                        حول
-                    </a>
-                    <a href="#" className="block px-4 py-2 hover:text-blue-400 hover:underline">
-                        خدمات
-                    </a>
-                    <a href="#" className="block px-4 py-2 hover:text-blue-400 hover:underline">
-                        اتصل بنا
-                    </a>
+                <div className="w-full absolute text-white text-right z-50 rounded-lg flex flex-col items-end mr-4 backdrop-blur-lg bg-transparent text-black p-2">
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">الرئيسية <GoHome size={30} /> </div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">السياحة <MdOutlineTravelExplore size={30} /></div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">اتصل بنا <FaHeadphones size={30} /></div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">حول <IoMdInformationCircleOutline size={30} /></div>
                 </div>
             )}
         </nav>
