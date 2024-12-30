@@ -78,3 +78,11 @@ body {
 .slider img:nth-child(6) {
   animation-delay: 20s;
 }
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+[dir="rtl"] {
+  text-align: right;
+}

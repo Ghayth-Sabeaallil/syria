@@ -4,16 +4,17 @@ import MapView from '../Components/MapView';
 import Header from '../Components/Header';
 import { DiscoverSyria } from '../Components/DiscoverSyria';
 import Container from '../Components/Container';
-
+import { useTranslation } from 'react-i18next';
 
 function Home() {
     const audioRef = useRef<HTMLAudioElement>(null);
+    const { i18n } = useTranslation();
     useEffect(() => {
-        // Play sound when the page loads
+        document.documentElement.dir = i18n.language === 'ar' ? 'ltr' : 'rtl';
         if (audioRef.current) {
             audioRef.current.play();
         }
-    }, []);
+    }, [i18n.language]);
     return (
         <>
             <Header />

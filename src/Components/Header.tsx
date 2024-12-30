@@ -3,26 +3,29 @@ import { FaHeadphones } from "react-icons/fa";
 import { GoHome, } from "react-icons/go";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { MdOutlineTravelExplore } from "react-icons/md";
+import { useTranslation } from "react-i18next";
+import LangSwitch from "./LangSwitch";
+
 const Header = () => {
+    const { t } = useTranslation();
+
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-
-
     return (
         <nav className="text-black font-bold backdrop-blur bg-transparent border-2 border-black shadow-xl rounded-lg m-4 relative">
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    {/* Logo */}
                     <div className="flex-shrink-0">
                         <a className="flex justify-between items-center" href="/"><img src="./syria.png" alt="logo" /></a>
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-10">
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">حول <IoMdInformationCircleOutline size={30} /></div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">اتصل بنا <FaHeadphones size={30} /></div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">السياحة <MdOutlineTravelExplore size={30} /></div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">الرئيسية <GoHome size={30} /> </div>
+                    <div className="hidden md:flex gap-4">
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('about')}<IoMdInformationCircleOutline size={30} /></div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('contact')}<FaHeadphones size={30} /></div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
+                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('home')}<GoHome size={30} /> </div>
+                        <LangSwitch />
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -53,10 +56,10 @@ const Header = () => {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="w-full absolute text-white text-right z-50 rounded-lg flex flex-col items-end mr-4 backdrop-blur-lg bg-transparent text-black p-2">
-                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">الرئيسية <GoHome size={30} /> </div>
-                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">السياحة <MdOutlineTravelExplore size={30} /></div>
-                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">اتصل بنا <FaHeadphones size={30} /></div>
-                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">حول <IoMdInformationCircleOutline size={30} /></div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('home')}<GoHome size={30} /> </div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('contact')}<FaHeadphones size={30} /></div>
+                    <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('about')}<IoMdInformationCircleOutline size={30} /></div>
                 </div>
             )}
         </nav>
