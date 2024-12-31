@@ -12,8 +12,9 @@ const LangSwitch: React.FC = () => {
 
     return (
         <button onClick={toggleLanguage}>
-            {i18n.language === 'ar' ? 'English' : 'العربية'}
+            {i18n.language === 'ar' ? <div className='flex gap-2'><img src="/en.png" alt="en" /><p>EN</p></div> : <div className='flex gap-2'><img src="/ar.png" alt="ar" /><p>AR</p></div>}
         </button>
+
     );
 };
 
