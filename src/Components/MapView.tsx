@@ -38,7 +38,7 @@ const MapView = () => {
         clickedPath.setAttribute('transform', '');
     };
     return (
-        <svg id='mySvg' ref={svgRef} baseProfile="tiny" fill="#326640" height="100vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100%" xmlns="http://www.w3.org/2000/svg" style={{ transition: "all 2s ease" }} >
+        <svg id='mySvg' ref={svgRef} baseProfile="tiny" fill="#326640" height="100vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100%" xmlns="http://www.w3.org/2000/svg" className='transition-all duration-1500 ease-in-out' >
             <Idlib handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
             <Aleppo handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
             <Homs handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />

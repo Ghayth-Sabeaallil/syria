@@ -8,9 +8,13 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-        fadeInOutWithBlack: {
-          from: { transform: "translateY(-100%)" },
-          to: { transform: "translateY(0%)" },
+        animationLeft: {
+          "0%": { opacity: "0", transform: "translateX(-100%)" },
+          "100%": { opacity: "1", transform: "translateX(0%)" },
+        },
+        animationRight: {
+          "0%": { opacity: "0", transform: "translateX(100%)" },
+          "100%": { opacity: "1", transform: "translateX(0%)" },
         },
       },
     },

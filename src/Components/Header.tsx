@@ -11,7 +11,7 @@ const Header = () => {
 
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
-        <nav className="text-black font-bold backdrop-blur bg-transparent border-2 border-black shadow-xl rounded-lg m-4 relative">
+        <nav className="text-black font-bold border-2 border-black shadow-xl rounded-lg m-4 relative ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
@@ -54,11 +54,12 @@ const Header = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="w-full absolute text-white text-right z-50 rounded-lg flex flex-col items-end mr-4 backdrop-blur-lg bg-transparent text-black p-2">
+                <div className="w-full absolute text-right z-50 rounded-lg flex flex-col items-end backdrop-blur-lg bg-transparent text-black p-2">
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('home')}<GoHome size={30} /> </div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('contact')}<FaHeadphones size={30} /></div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('about')}<IoMdInformationCircleOutline size={30} /></div>
+                    <LangSwitch />
                 </div>
             )}
         </nav>

@@ -3,152 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Background Image Slider with Smooth Opacity</title>
+    <title>Typing Animation</title>
     <style>
-      /* Container for the background image slider */
-      .container {
-        position: relative;
-        width: 100%;
-        height: 500px; /* Adjust as needed */
-        background-size: cover;
-        background-position: center;
-        animation: slide 50s linear infinite;
+      /* Basic page styling */
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #222;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
       }
 
-      /* Keyframes to change background images with opacity transition */
+      .typing {
+        font-size: 36px;
+        font-weight: bold;
+        display: inline-block;
+        border-right: 4px solid #fff; /* Cursor effect */
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typing 4s steps(90) 1s forwards;
+      }
 
-      @keyframes slide {
-        0% {
-          background-image: url("/public/1.jpg");
-          opacity: 0;
-        }
-        3% {
-          background-image: url("/public/1.jpg");
-          opacity: 0.5;
-        }
-        6% {
-          background-image: url("/public/1.jpg");
-          opacity: 1;
-        }
-        9% {
-          background-image: url("/public/1.jpg");
-          opacity: 0.5;
-        }
-        12% {
-          background-image: url("/public/1.jpg");
-          opacity: 0;
-        }
-        15% {
-          background-image: url("/public/2.jpg");
-          opacity: 0;
-        }
-        18% {
-          background-image: url("/public/2.jpg");
-          opacity: 0.5;
-        }
-        21% {
-          background-image: url("/public/2.jpg");
-          opacity: 1;
-        }
-        24% {
-          background-image: url("/public/2.jpg");
-          opacity: 0.5;
-        }
-        27% {
-          background-image: url("/public/2.jpg");
-          opacity: 0;
-        }
-        30% {
-          background-image: url("/public/3.jpg");
-          opacity: 0;
-        }
-
-        33% {
-          background-image: url("/public/3.jpg");
-          opacity: 0.5;
-        }
-        36% {
-          background-image: url("/public/3.jpg");
-          opacity: 1;
-        }
-        39% {
-          background-image: url("/public/3.jpg");
-          opacity: 0.5;
-        }
-        42% {
-          background-image: url("/public/3.jpg");
-          opacity: 0;
-        }
-        45% {
-          background-image: url("/public/4.jpg");
-          opacity: 0;
-        }
-        48% {
-          background-image: url("/public/4.jpg");
-          opacity: 0.5;
-        }
-        51% {
-          background-image: url("/public/4.jpg");
-          opacity: 1;
-        }
-        54% {
-          background-image: url("/public/4.jpg");
-          opacity: 0.5;
-        }
-        57% {
-          background-image: url("/public/4.jpg");
-          opacity: 0;
-        }
-        60% {
-          background-image: url("/public/5.jpg");
-          opacity: 0;
-        }
-
-        63% {
-          background-image: url("/public/5.jpg");
-          opacity: 0.5;
-        }
-        66% {
-          background-image: url("/public/5.jpg");
-          opacity: 1;
-        }
-        69% {
-          background-image: url("/public/5.jpg");
-          opacity: 0.5;
-        }
-        72% {
-          background-image: url("/public/5.jpg");
-          opacity: 0;
-        }
-        75% {
-          background-image: url("/public/6.jpg");
-          opacity: 0;
-        }
-        78% {
-          background-image: url("/public/6.jpg");
-          opacity: 0.5;
-        }
-        81% {
-          background-image: url("/public/6.jpg");
-          opacity: 1;
-        }
-        84% {
-          background-image: url("/public/6.jpg");
-          opacity: 0.5;
-        }
-        87% {
-          background-image: url("/public/6.jpg");
-          opacity: 0;
-        }
-        90% {
-          background-image: url("/public/1.jpg");
-          opacity: 0;
+      /* Keyframe for the typing effect */
+      @keyframes typing {
+        to {
+          width: 50%;
         }
       }
     </style>
   </head>
   <body>
-    <!-- Container to hold the background images -->
-    <div class="container"></div>
+    <div class="typing">Welcome to the typing animation!</div>
   </body>
 </html>

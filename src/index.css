@@ -14,7 +14,10 @@ body {
       rgba(136, 134, 134, 0.5)
     ),
     url("/bg.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .slider {
   width: 100%;
@@ -33,7 +36,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  animation: fadeInOutWithBlack 20s 1s infinite;
+  animation: fadeInOutWithBlack 28s 1s infinite;
   animation-fill-mode: backwards;
 }
 
@@ -77,6 +80,12 @@ body {
 }
 .slider img:nth-child(6) {
   animation-delay: 20s;
+}
+.slider img:nth-child(7) {
+  animation-delay: 24s;
+}
+.slider img:nth-child(8) {
+  animation-delay: 28s;
 }
 
 [dir="ltr"] {
