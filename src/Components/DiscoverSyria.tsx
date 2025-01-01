@@ -33,15 +33,12 @@ export const DiscoverSyria = () => {
     return (
         <>
             <div id="discover" className="slider items-center m-4 flex justify-end p-10 rounded-lg shadow-2xl">
-                <img src="/3.jpg" alt="Image 3" />
                 <img src="/1.jpg" alt="Image 1" />
                 <img src="/2.jpg" alt="Image 2" />
+                <img src="/3.jpg" alt="Image 3" />
                 <img src="/4.jpg" alt="Image 4" />
                 <img src="/5.jpg" alt="Image 5" />
-                <img src="/6.png" alt="Image 6" />
-                <img src="/7.jpg" alt="Image 7" />
-                <img src="/8.jpg" alt="Image 8" />
-
+                <img src="/6.jpg" alt="Image 6" />
                 <div className="flex flex-col justify-center items-end gap-5  z-[1] text-right">
                     <p className="animate-[animationRight_2s_ease-out] text-white font-cairo leading-[1.45] font-extrabold text-2xl font-mono">{t('welcome')}</p>
                     <p className="animate-[animationLeft_2s_ease-out]  text-white font-cairo leading-[1.45] font-extrabold text-2xl font-mono">{t('des')}</p>

@@ -3,40 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typing Animation</title>
+    <title>3D Card</title>
     <style>
-      /* Basic page styling */
       body {
-        font-family: "Courier New", Courier, monospace;
-        background-color: #222;
-        color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        font-family: Arial, sans-serif;
       }
 
-      .typing {
-        font-size: 36px;
-        font-weight: bold;
-        display: inline-block;
-        border-right: 4px solid #fff; /* Cursor effect */
-        white-space: nowrap;
-        overflow: hidden;
-        width: 0;
-        animation: typing 4s steps(90) 1s forwards;
+      .card-container {
+        perspective: 1000px;
       }
 
-      /* Keyframe for the typing effect */
-      @keyframes typing {
-        to {
-          width: 50%;
-        }
+      .card {
+        width: 300px;
+        height: 200px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+      }
+
+      .card:hover {
+        transform: rotateY(20deg) rotateX(10deg);
+      }
+
+      .card-content {
+        text-align: center;
+      }
+
+      .card-content h1 {
+        font-size: 1.5em;
+        color: #333;
+        margin: 0;
+      }
+
+      .card-content p {
+        font-size: 1em;
+        color: #777;
+        margin-top: 10px;
       }
     </style>
   </head>
   <body>
-    <div class="typing">Welcome to the typing animation!</div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <h1>3D Card</h1>
+          <p>Hover to see the effect!</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
