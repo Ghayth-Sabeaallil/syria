@@ -9,11 +9,11 @@ const Card = ({ name, description, image }: CardProps) => {
                     src={image}
                     alt={name}
                 />
-                <div className="flex flex-col absolute w-full h-full bottom-0 text-center justify-center items-center  p-4 duration-500 opacity-0 hover:backdrop-blur-[5px] hover:opacity-100 cursor-pointer rounded-md">
-                    <h2 className="text-3xl font-semibold leading-snug text-white">
+                <div className="flex flex-col absolute w-full h-full bottom-0 text-center justify-center items-center p-2 duration-500 opacity-0 hover:backdrop-blur-[5px] hover:opacity-100 cursor-pointer rounded-md bg-black/50 ">
+                    <h2 className="text-sm sm:text-base md:text-2xl font-extrabold text-white">
                         {name}
                     </h2>
-                    <h4 className="text-xl font-medium leading-relaxed text-white">
+                    <h4 className="text-sm sm:text-base md:text-2xl font-medium text-white overflow-y-auto">
                         {description}
                     </h4>
                 </div>

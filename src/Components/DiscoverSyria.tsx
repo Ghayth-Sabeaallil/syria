@@ -40,8 +40,8 @@ export const DiscoverSyria = () => {
                 <img src="/5.jpg" alt="Image 5" />
                 <img src="/6.jpg" alt="Image 6" />
                 <div className="flex flex-col justify-center items-end gap-5  z-[1] text-right">
-                    <p className="animate-[animationRight_2s_ease-out] text-white font-cairo leading-[1.45] font-extrabold text-2xl font-mono">{t('welcome')}</p>
-                    <p className="animate-[animationLeft_2s_ease-out]  text-white font-cairo leading-[1.45] font-extrabold text-2xl font-mono">{t('des')}</p>
+                    <p className="animate-[animationRight_2s_ease-out] text-white font-cairo leading-[1.45] font-extrabold text-lg sm:text-lg md:text-3xl font-mono">{t('welcome')}</p>
+                    <p className="animate-[animationLeft_2s_ease-out]  text-white font-cairo leading-[1.45] font-extrabold text-lg sm:text-lg md:text-3xl font-mono">{t('des')}</p>
                     <Button text={`<< ${t('discover')}`} handleClick={() => handleScrollToSection("mySvg")} />
                 </div>
             </div></>

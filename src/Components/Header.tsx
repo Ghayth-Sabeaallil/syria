@@ -1,17 +1,23 @@
+
+
 import { useState } from "react";
 import { FaHeadphones } from "react-icons/fa";
 import { GoHome, } from "react-icons/go";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { useTranslation } from "react-i18next";
-import LangSwitch from "./LangSwitch";
 
 const Header = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
+    // Function to toggle language between English and Arabic
+    const toggleLanguage = () => {
+        const newLanguage = i18n.language === 'ar' ? 'en' : 'ar'; // Toggle between 'ar' and 'en'
+        i18n.changeLanguage(newLanguage); // Change the language
+    };
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
-        <nav className="text-black font-bold border-2 border-black shadow-xl rounded-lg m-4 relative backdrop-blur-sm bg-transparen">
+        <nav className="text-black font-bold border-2 border-black shadow-xl rounded-lg m-4 relative z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">
@@ -24,7 +30,7 @@ const Header = () => {
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('contact')}<FaHeadphones size={30} /></div>
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('home')}<GoHome size={30} /> </div>
-                        <LangSwitch />
+                        <div onClick={toggleLanguage} className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{i18n.language === 'ar' ? <p>English</p> : <p>العربية</p>}</div>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -59,7 +65,7 @@ const Header = () => {
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('contact')}<FaHeadphones size={30} /></div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('about')}<IoMdInformationCircleOutline size={30} /></div>
-                    <LangSwitch />
+                    <div onClick={toggleLanguage} className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{i18n.language === 'ar' ? <p>English</p> : <p>العربية</p>}</div>
                 </div>
             )}
         </nav>

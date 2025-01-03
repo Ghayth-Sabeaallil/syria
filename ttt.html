@@ -3,64 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3D Card</title>
+    <title>Card Slider</title>
     <style>
       body {
+        font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
-        background: linear-gradient(135deg, #89f7fe, #66a6ff);
-        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
       }
 
       .card-container {
-        perspective: 1000px;
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cards {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
       }
 
       .card {
-        width: 300px;
-        height: 200px;
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform-style: preserve-3d;
-        transition: transform 0.5s;
-      }
-
-      .card:hover {
-        transform: rotateY(20deg) rotateX(10deg);
-      }
-
-      .card-content {
+        min-width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #fff;
         text-align: center;
+        transform: scale(0.9);
+        opacity: 0.8;
+        transition: transform 0.3s, opacity 0.3s;
       }
 
-      .card-content h1 {
-        font-size: 1.5em;
-        color: #333;
-        margin: 0;
+      .card.active {
+        transform: scale(1);
+        opacity: 1;
       }
 
-      .card-content p {
-        font-size: 1em;
-        color: #777;
-        margin-top: 10px;
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 10;
+      }
+
+      .arrow.left {
+        left: 10px;
+      }
+
+      .arrow.right {
+        right: 10px;
       }
     </style>
   </head>
   <body>
     <div class="card-container">
-      <div class="card">
-        <div class="card-content">
-          <h1>3D Card</h1>
-          <p>Hover to see the effect!</p>
-        </div>
+      <div class="cards" id="cards">
+        <div class="card active">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
       </div>
+      <button class="arrow left" id="prev">&lt;</button>
+      <button class="arrow right" id="next">&gt;</button>
     </div>
+
+    <script>
+      const cards = document.querySelectorAll(".card");
+      const cardContainer = document.getElementById("cards");
+      const prev = document.getElementById("prev");
+      const next = document.getElementById("next");
+
+      let currentIndex = 0;
+
+      function updateCards() {
+        cards.forEach((card, index) => {
+          card.classList.remove("active");
+          if (index === currentIndex) {
+            card.classList.add("active");
+          }
+        });
+
+        cardContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      prev.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateCards();
+      });
+
+      next.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateCards();
+      });
+
+      updateCards();
+    </script>
   </body>
 </html>
