@@ -3,9 +3,8 @@ import Footer from '../Components/Footer';
 import MapView from '../Components/MapView';
 import Header from '../Components/Header';
 import { DiscoverSyria } from '../Components/DiscoverSyria';
-import DiscoverContainer from '../Components/DiscoverContainer';
 import { useTranslation } from 'react-i18next';
-import CardContainer from '../Components/CardContainer';
+import InfoContainer from '../Components/InfoContainer';
 
 
 
@@ -21,8 +20,8 @@ function Home() {
     return (
         <>
             <Header />
-            <DiscoverContainer discover={<DiscoverSyria />} />
-            <CardContainer />
+            <DiscoverSyria />
+            <InfoContainer />
             <MapView />
             <Footer />
         </>

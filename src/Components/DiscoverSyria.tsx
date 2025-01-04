@@ -31,7 +31,7 @@ export const DiscoverSyria = () => {
         requestAnimationFrame(animationScroll);
     };
     return (
-        <>
+        <div className="flex">
             <div id="discover" className="slider items-center m-4 flex justify-end p-10 rounded-lg shadow-2xl">
                 <img src="/1.jpg" alt="Image 1" />
                 <img src="/2.jpg" alt="Image 2" />
@@ -44,7 +44,7 @@ export const DiscoverSyria = () => {
                     <p className="animate-[animationLeft_2s_ease-out]  text-white font-cairo leading-[1.45] font-extrabold text-lg sm:text-lg md:text-3xl font-mono">{t('des')}</p>
                     <Button text={`<< ${t('discover')}`} handleClick={() => handleScrollToSection("mySvg")} />
                 </div>
-            </div></>
+            </div></div>
 
     )
 }
