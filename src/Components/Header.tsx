@@ -9,13 +9,12 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
     const { t, i18n } = useTranslation();
-
     // Function to toggle language between English and Arabic
     const toggleLanguage = () => {
         const newLanguage = i18n.language === 'ar' ? 'en' : 'ar'; // Toggle between 'ar' and 'en'
         i18n.changeLanguage(newLanguage); // Change the language
     };
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
     return (
         <nav className="text-black font-bold border-2 border-black shadow-xl rounded-lg m-4 relative z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,7 +59,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="w-full absolute text-right z-50 rounded-lg flex flex-col items-end backdrop-blur-lg bg-transparent text-black p-2">
+                <div className="w-full animate-[slideDown_1s_forwards] absolute text-right z-50 rounded-lg flex flex-col items-end backdrop-blur-lg bg-transparent text-black p-2">
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('home')}<GoHome size={30} /> </div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
                     <div className="text-xl font-mono cursor-pointer p-3 font-bold duration-500 flex gap-2 text-black hover:scale-125">{t('contact')}<FaHeadphones size={30} /></div>
