@@ -22,5 +22,9 @@
         "des": "Sahyun Castle is a medieval castle in northwestern Syria. It is located 7 km east of Al-Haffah town and 30 km east of the city of Latakia, in high mountainous terrain on a ridge between two deep ravines and surrounded by forest, the site has been fortified since at least the mid 10th century. In 975 the Byzantine Emperor John I Tzimiskes captured the site and it remained under Byzantine control until around 1108. Early in the 12th century the Franks assumed control of the site and it was part of the newly formed Crusader state of the Principality of Antioch. The Crusaders undertook an extensive building programme, giving the castle much of its current appearance. In 1188 it fell to the forces of Saladin after a three-day siege.[1] The castle was again besieged in 1287, this time both defender and belligerent were Mamluks. In 2006, the castles of Qal'at Salah El-Din and Krak des Chevaliers were recognised as a World Heritage Site by UNESCO. The site is owned by the Syrian government. ",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Citadel_of_Salah_Ed-din.jpg/1920px-Citadel_of_Salah_Ed-din.jpg"
       }
-    ]
+    ],
+    "castles": "Castles",
+    "mosques": "Mosques",
+    "churches": "Churches",
+    "nature": "Nature"
 }
