@@ -21,6 +21,10 @@ export default {
           "100%": { top: "100%", opacity: "1" },
         },
       },
+      rotate: {
+        360: "360deg",
+        180: "180deg",
+      },
     },
   },
   variants: {},

@@ -5,6 +5,7 @@ import Header from '../Components/Header';
 import { DiscoverSyria } from '../Components/DiscoverSyria';
 import { useTranslation } from 'react-i18next';
 import InfoContainer from '../Components/InfoContainer';
+import CardContainer from '../Components/CardContainer';
 
 
 
