@@ -20,6 +20,10 @@ export default {
           "0%": { top: "-100%", opacity: "0" },
           "100%": { top: "100%", opacity: "1" },
         },
+        slideUp: {
+          "0%": { top: "100%", opacity: "1" },
+          "100%": { top: "-100%", opacity: "0" },
+        },
       },
       rotate: {
         360: "360deg",
