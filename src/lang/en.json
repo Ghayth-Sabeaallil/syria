@@ -26,5 +26,84 @@
     "castles": "Castles",
     "mosques": "Mosques",
     "churches": "Churches",
-    "nature": "Nature"
+    "nature": "Nature",
+    "castlesList": [
+      {
+        "name": "Aleppo Castle",
+        "link": "https://en.wikipedia.org/wiki/Citadel_of_Aleppo"
+      },
+      {
+        "name": "Krak des Chevaliers",
+        "link": "https://en.wikipedia.org/wiki/Krak_des_Chevaliers"
+  
+      },
+      {
+        "name": "Sahyun Castle",
+        "link": "https://en.wikipedia.org/wiki/Sahyun_Castle"
+  
+      },
+      {
+        "name": "Citadel of Damascus",
+        "link": "https://en.wikipedia.org/wiki/Citadel_of_Damascus"
+  
+      },
+      {
+        "name": "Margat",
+        "link": "https://en.wikipedia.org/wiki/Margat"
+  
+      },
+      {
+        "name": "Jabaar Castle",
+        "link": "https://en.wikipedia.org/wiki/Qal%27at_Ja%27bar"
+  
+      },
+      {
+        "name": "Al-Madiq Castle",
+        "link": "https://en.wikipedia.org/wiki/Qalaat_al-Madiq"
+  
+      }
+    ],
+    "mosquesList": [
+      {
+        "name": "Umayyad Mosque",
+        "link": "https://en.wikipedia.org/wiki/Umayyad_Mosque"
+      },
+      {
+        "name": "Khalid ibn al-Walid Mosque",
+        "link": "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid_Mosque"
+  
+      },
+      {
+        "name": "Sulaymaniyya Takiyya",
+        "link": "https://en.wikipedia.org/wiki/Sulaymaniyya_Takiyya"
+  
+      },
+      {
+        "name": "Nur al-Din Mosque",
+        "link": "https://en.wikipedia.org/wiki/Nur_al-Din_Mosque"
+  
+      }
+    ],
+    "churchesList": [
+    {
+      "name": "Simeon Stylites",
+      "link": "https://en.wikipedia.org/wiki/Simeon_Stylites"
+    },
+    {
+      "name": "Saint Mary Church of the Holy Belt",
+      "link": "https://en.wikipedia.org/wiki/Saint_Mary_Church_of_the_Holy_Belt"
+    },
+    {
+      "name": "Church of Saint Elian",
+      "link": "https://en.wikipedia.org/wiki/Church_of_Saint_Elian"
+    },
+    {
+      "name": "Qalb Loze",
+      "link": "https://en.wikipedia.org/wiki/Qalb_Loze"
+    },
+    {
+      "name": "Convent of Saint Thecla (Maaloula)",
+      "link": "https://en.wikipedia.org/wiki/Convent_of_Saint_Thecla_(Maaloula)"
+    }
+  ]
 }

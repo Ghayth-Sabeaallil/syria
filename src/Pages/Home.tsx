@@ -12,7 +12,7 @@ function Home() {
     const audioRef = useRef<HTMLAudioElement>(null);
     const { i18n } = useTranslation();
     useEffect(() => {
-        /* document.documentElement.dir = i18n.language === 'ar' ? 'ltr' : 'rtl';*/
+        document.documentElement.dir = i18n.language === 'ar' ? 'ltr' : 'rtl';
         if (audioRef.current) {
             audioRef.current.play();
         }

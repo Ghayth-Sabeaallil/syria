@@ -29,68 +29,76 @@
   "nature": "الطبيعة",
   "castlesList": [
     {
-      "name": "قلعة حلب"
+      "name": "قلعة حلب",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%AD%D9%84%D8%A8"
     },
     {
-      "name": "قلعة الحصن"
+      "name": "قلعة الحصن",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%A7%D9%84%D8%AD%D8%B5%D9%86_(%D8%AD%D9%85%D8%B5)"
     },
     {
-      "name": "قلعة صلاح الدين"
+      "name": "قلعة صلاح الدين الأيوبي",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%B5%D9%84%D8%A7%D8%AD_%D8%A7%D9%84%D8%AF%D9%8A%D9%86_%D8%A7%D9%84%D8%A3%D9%8A%D9%88%D8%A8%D9%8A_(%D8%B3%D9%88%D8%B1%D9%8A%D8%A7)"
     },
     {
-      "name": "قلعة صلاح الدين"
+      "name": "قلعة دمشق",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%AF%D9%85%D8%B4%D9%82"
     },
     {
-      "name": "قلعة صلاح الدين"
+      "name": "قلعة مارقب",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%A7%D9%84%D9%85%D8%B1%D9%82%D8%A8_(%D8%B3%D9%88%D8%B1%D9%8A%D8%A7)"
     },
     {
-      "name": "قلعة صلاح الدين"
+      "name": "قلعة جعبر",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%AC%D8%B9%D8%A8%D8%B1"
+    },
+    {
+      "name": "قلعة المضيق",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%B9%D8%A9_%D8%A7%D9%84%D9%85%D8%B6%D9%8A%D9%82"
     }
   ],
   "mosquesList": [
     {
-      "name": "الجامع الأموي الكبير - دمشق 705م"
+      "name": "الجامع الأموي الكبير - دمشق 705م",
+      "link": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D8%A3%D9%85%D9%88%D9%8A_(%D8%AF%D9%85%D8%B4%D9%82)"
     },
     {
-      "name": "جامع خالد بن الوليد - حمص القرن 19"
+      "name": "جامع خالد بن الوليد - حمص القرن 19",
+      "link": "https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D9%85%D8%B9_%D8%AE%D8%A7%D9%84%D8%AF_%D8%A8%D9%86_%D8%A7%D9%84%D9%88%D9%84%D9%8A%D8%AF"
     },
     {
-      "name": "جامع التكية السليمانية - دمشق القرن 16"
+      "name": "جامع التكية السليمانية - دمشق القرن 16",
+      "link": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D8%A9_%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86%D9%8A%D8%A9_(%D8%AF%D9%85%D8%B4%D9%82)"
     },
     {
-      "name": "جامع نور الدين الزنكي - حلب القرن 12"
-    },
-    {
-      "name": "جامع العادلية - دمشق القرن 16"
-    },
-    {
-      "name": "مسجد داريا الكبير"
+      "name": "جامع نور الدين الزنكي - حماة القرن 12",
+      "link": "https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D9%86%D9%88%D8%B1%D9%8A_(%D8%AD%D9%85%D8%A7%D8%A9)"
     }
   ],
   "churchesList": [
     {
-      "name": "كنيسة القديس سمعان العمودي - حلب القرن 5"
+      "name": "كنيسة القديس سمعان العمودي - حلب القرن 5",
+      "link": "https://ar.wikipedia.org/wiki/%D8%B3%D9%85%D8%B9%D8%A7%D9%86_%D8%A7%D9%84%D8%B9%D9%85%D9%88%D8%AF%D9%8A"
     },
     {
-      "name": "كنيسة أم الزنار - حمص القرن 1"
+      "name": "كنيسة أم الزنار - حمص القرن 1",
+      "link": "https://ar.wikipedia.org/wiki/%D9%83%D9%86%D9%8A%D8%B3%D8%A9_%D8%A3%D9%85_%D8%A7%D9%84%D8%B2%D9%86%D8%A7%D8%B1"
     },
     {
-      "name": "كنيسة مار اليان - حمص القرن 4"
+      "name": "كنيسة مار اليان - حمص القرن 4",
+      "link": "https://ar.wikipedia.org/wiki/%D9%83%D9%86%D9%8A%D8%B3%D8%A9_%D9%85%D8%A7%D8%B1_%D8%A5%D9%84%D9%8A%D8%A7%D9%86"
     },
     {
-      "name": "كنيسة قلب لوزة - ادلب القرن 5"
+      "name": "كنيسة قلب لوزة - ادلب القرن 5",
+      "link": "https://ar.wikipedia.org/wiki/%D9%82%D9%84%D8%A8_%D9%84%D9%88%D8%B2%D8%A9"
     },
     {
-      "name": "كاتدرائية القديس جاورجيوس - درعا القرن 6"
+      "name": "كاتدرائية القديس جاورجيوس - درعا القرن 6",
+      "link": "https://ar.wikipedia.org/wiki/%D9%83%D8%A7%D8%AA%D8%AF%D8%B1%D8%A7%D8%A6%D9%8A%D8%A9_%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D8%B3_%D8%AC%D8%A7%D9%88%D8%B1%D8%AC%D9%8A%D9%88%D8%B3"
     },
     {
-      "name": "كنيسة مار تقلا - معلولا"
-    },
-    {
-      "name": "كنيسة بيت لحم - ادلب القرن 5"
-    },
-    {
-      "name": "كنيسة مار زكريا - حلب القرن 6"
+      "name": "كنيسة مار تقلا - معلولا",
+      "link": "https://ar.wikipedia.org/wiki/%D9%83%D9%86%D9%8A%D8%B3%D8%A9_%D9%85%D8%A7%D8%B1_%D8%AA%D9%82%D9%84%D8%A7"
     }
   ]
 }

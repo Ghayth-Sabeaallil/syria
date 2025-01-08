@@ -7,12 +7,12 @@ import { IoIosArrowDown } from "react-icons/io";
 
 type ListProps = {
     name?: string;
+    link?: string
 };
 
 const InfoContainer = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
-    const { t } = useTranslation();
-
+    const { t, i18n } = useTranslation();
     // Safely fetching data from `t`, ensuring it returns a list or empty array if undefined
     const getList = (key: string): ListProps[] => {
         const list = t(key, { returnObjects: true });
@@ -62,22 +62,27 @@ const InfoContainer = () => {
 
                     {/* Dropdown list */}
                     <div
-                        className={`flex flex-col items-center w-4/6 transition-all duration-500 overflow-hidden rounded-bl-lg rounded-br-lg bg-gray-100 shadow-lg ${activeIndex === index ? "max-h-full p-4" : "max-h-0 p-0"
+                        className={`flex flex-col items-center w-4/6 transition-all duration-[1500ms] overflow-hidden rounded-bl-lg rounded-br-lg bg-gray-100 shadow-lg ${activeIndex === index ? "max-h-full" : "max-h-0"
                             }`}
                     >
                         {activeIndex === index &&
                             item.list.map((listItem, idx) => (
-                                <div
+                                <a
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href={`${listItem.link}`}
                                     key={idx}
-                                    className="select-none w-full text-center cursor-pointer hover:bg-slate-300 text-lg text-gray-600 p-2"
+                                    className="select-none w-full cursor-pointer hover:bg-slate-300 text-lg text-gray-600 p-3 pl-3 pr-3"
+                                    dir={i18n.language === 'ar' ? "rtl" : "ltr"}
                                 >
                                     {listItem.name}
-                                </div>
+                                </a>
                             ))}
                     </div>
                 </div>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     );
 };
 
