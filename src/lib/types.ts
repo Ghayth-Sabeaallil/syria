@@ -1,7 +1,6 @@
 export type StateProps = {
     handleClick?: React.MouseEventHandler<SVGPathElement>;
-    handleDoubleClick?: React.MouseEventHandler<SVGPathElement>;
-    isClicked?: string;
+    isClicked?: boolean | undefined;
 };
 
 export type CardProps = {

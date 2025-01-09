@@ -15,9 +15,49 @@ import Suwayda from '../Components/States/Suwayda';
 import Tartus from '../Components/States/Tartus';
 import "../index.css"
 
-const MapView = () => {
+type MapViewProps = {
+    id?: string;
+};
+const MapView = ({ id }: MapViewProps) => {
     const svgRef = useRef<SVGSVGElement>(null);
 
+    const handlePathClick = (event: React.MouseEvent<SVGPathElement>) => {
+        window.open(`/state?id=${event.currentTarget.id}`, '_blank');
+    };
+
+    const handleClick = (event: React.MouseEvent<SVGPathElement>): boolean => {
+        if (event.currentTarget.id === id) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+
+    return (
+        <svg id='mySvg' ref={svgRef} baseProfile="tiny" fill="#326640" height="100vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100%" xmlns="http://www.w3.org/2000/svg" className='transition-all duration-1500 ease-in-out' >
+            <Idlib handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Idlib' } } as React.MouseEvent<SVGPathElement>)} />
+            <Aleppo handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Aleppo' } } as React.MouseEvent<SVGPathElement>)} />
+            <Homs handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Homs' } } as React.MouseEvent<SVGPathElement>)} />
+            <Hama handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Hama' } } as React.MouseEvent<SVGPathElement>)} />
+            <Damascus handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Damascus' } } as React.MouseEvent<SVGPathElement>)} />
+            <RefDamascus handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'RefDamascus' } } as React.MouseEvent<SVGPathElement>)} />
+            <Daraa handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Daraa' } } as React.MouseEvent<SVGPathElement>)} />
+            <Suwayda handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Suwayda' } } as React.MouseEvent<SVGPathElement>)} />
+            <Quneitra handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Quneitra' } } as React.MouseEvent<SVGPathElement>)} />
+            <Raqqah handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Raqqah' } } as React.MouseEvent<SVGPathElement>)} />
+            <Hasaka handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Hasaka' } } as React.MouseEvent<SVGPathElement>)} />
+            <DayrAzZawr handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'DayrAzZawr' } } as React.MouseEvent<SVGPathElement>)} />
+            <Tartus handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Tartus' } } as React.MouseEvent<SVGPathElement>)} />
+            <Latakia handleClick={handlePathClick} isClicked={handleClick({ currentTarget: { id: 'Latakia' } } as React.MouseEvent<SVGPathElement>)} />
+        </svg>
+    )
+}
+
+export default MapView
+
+
+/*
     const handlePathClick = (event: React.MouseEvent<SVGPathElement>) => {
         if (!svgRef.current) return;
         const clickedPath = event.target as SVGPathElement;
@@ -31,30 +71,10 @@ const MapView = () => {
         clickedPath.setAttribute('transform', `translate(${translateX}, ${translateY}) scale(${scaleFactor})`);
     };
 
-    const handlePathDoubleClick = (event: React.MouseEvent<SVGPathElement>) => {
+      const handlePathDoubleClick = (event: React.MouseEvent<SVGPathElement>) => {
         if (!svgRef.current) return;
         const clickedPath = event.target as SVGPathElement;
         clickedPath.style.transition = 'transform 2s ease-in-out';
         clickedPath.setAttribute('transform', '');
     };
-    return (
-        <svg id='mySvg' ref={svgRef} baseProfile="tiny" fill="#326640" height="100vh" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.5" version="1.2" viewBox="0 0 1000 918" width="100%" xmlns="http://www.w3.org/2000/svg" className='transition-all duration-1500 ease-in-out' >
-            <Idlib handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Aleppo handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Homs handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Hama handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Damascus handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <RefDamascus handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Daraa handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Suwayda handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Quneitra handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Raqqah handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Hasaka handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <DayrAzZawr handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Tartus handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-            <Latakia handleClick={handlePathClick} handleDoubleClick={handlePathDoubleClick} />
-        </svg>
-    )
-}
-
-export default MapView
+*/
