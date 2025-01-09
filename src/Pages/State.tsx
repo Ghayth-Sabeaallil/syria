@@ -7,7 +7,7 @@ import MapView from '../Components/MapView';
 function State() {
     const audioRef = useRef<HTMLAudioElement>(null);
     const [id, setId] = useState<string>();
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     useEffect(() => {
         document.documentElement.dir = i18n.language === 'ar' ? 'ltr' : 'rtl';
         if (audioRef.current) {
@@ -17,6 +17,7 @@ function State() {
         const params = new URL(url).searchParams;
         const id = params.get("id");
         setId(id!);
+        document.title = `${t('syria')} - ${id}`
 
     }, [i18n.language]);
 
@@ -25,7 +26,13 @@ function State() {
             <Header />
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-1 md:grid-cols-2 justify-center items-center m-auto h-full justify-items-center items-center">
                 <MapView id={id} />
-                <div className="flex items-center justify-center h-screen">HELLO</div>
+                <div className="flex flex-col items-center justify-center h-screen">
+                    <div>Title</div>
+                    <div>Desc</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
             <Footer />
         </>

@@ -29,6 +29,10 @@ export default {
         360: "360deg",
         180: "180deg",
       },
+      fontFamily: {
+        Amiri: ["Amiri", "serif"],
+        Kufi: ["Reem Kufi", "serif"], // Map 'roboto' to the Google Font
+      },
     },
   },
   variants: {},
