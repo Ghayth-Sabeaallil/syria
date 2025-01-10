@@ -31,8 +31,8 @@ export const DiscoverSyria = () => {
         requestAnimationFrame(animationScroll);
     };
     return (
-        <div className="flex">
-            <div id="discover" className="slider items-center m-4 flex justify-end p-10 rounded-lg shadow-2xl">
+        <div className="flex select-none">
+            <div id="discover" className="border-2 border-black slider items-center m-4 flex justify-end p-10 rounded-lg shadow-2xl">
                 <img src="/1.jpg" alt="Image 1" />
                 <img src="/2.jpg" alt="Image 2" />
                 <img src="/3.jpg" alt="Image 3" />

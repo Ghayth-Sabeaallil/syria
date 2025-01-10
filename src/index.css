@@ -10,8 +10,8 @@ body {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-      rgba(136, 134, 134, 0.5),
-      rgba(136, 134, 134, 0.5)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
     ),
     url("/bg.jpg");
   background-repeat: no-repeat;

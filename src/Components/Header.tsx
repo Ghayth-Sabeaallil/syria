@@ -16,7 +16,7 @@ const Header = () => {
     };
     const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
     return (
-        <nav className="text-black font-bold border-2 border-black shadow-xl rounded-lg m-4 relative z-50">
+        <nav className="bg-white text-black font-bold border-2 border-black shadow-xl rounded-lg m-4 relative z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0">

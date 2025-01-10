@@ -6,6 +6,7 @@ import { DiscoverSyria } from '../Components/DiscoverSyria';
 import { useTranslation } from 'react-i18next';
 import InfoContainer from '../Components/InfoContainer';
 import { SAR } from '../Components/SAR';
+import Videos from '../Components/Videos';
 
 
 
@@ -27,6 +28,7 @@ function Home() {
             <DiscoverSyria />
             <InfoContainer />
             <MapView />
+            <Videos />
             <Footer />
         </>
 
