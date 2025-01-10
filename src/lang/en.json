@@ -1,5 +1,5 @@
 {
-  "syria": "Syria",
+  "syria": "Welcome To Syria",
     "home": "Home",
     "about": "About",
     "contact": "Contact Us",
@@ -88,7 +88,7 @@
     "churchesList": [
     {
       "name": "Simeon Stylites",
-      "link": "https://en.wikipedia.org/wiki/Simeon_Stylites"
+      "link": "https://en.wikipedia.org/wiki/Church_of_Saint_Simeon_Stylites"
     },
     {
       "name": "Saint Mary Church of the Holy Belt",
