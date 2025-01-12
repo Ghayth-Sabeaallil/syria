@@ -6,6 +6,7 @@ import { GoHome, } from "react-icons/go";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const { t, i18n } = useTranslation();
@@ -28,7 +29,9 @@ const Header = () => {
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('about')}<IoMdInformationCircleOutline size={30} /></div>
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('contact')}<FaHeadphones size={30} /></div>
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('home')}<GoHome size={30} /> </div>
+                        <Link to={"/"}>
+                            <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('home')}<GoHome size={30} /></div>
+                        </Link>
                         <div onClick={toggleLanguage} className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{i18n.language === 'ar' ? <p>English</p> : <p>العربية</p>}</div>
                     </div>
 

@@ -1,91 +1,82 @@
 {
   "syria": "Welcome To Syria",
-    "home": "Home",
-    "about": "About",
-    "contact": "Contact Us",
-    "tourism": "Tourism",
-    "welcome": "Welcome To Syria",
-    "des": "Nature And Civilizations",
-    "discover": "Discover Syria",
-    "old": [
-        {
-        "name": "Citadel of Aleppo",
-        "des": "The Citadel of Aleppo is a large medieval fortified palace in the centre of the old city of Aleppo, northern Syria. It is considered to be one of the oldest and largest castles in the world. Usage of the Citadel hill dates back at least to the middle of the 3rd millennium BC. Occupied by many civilizations over time including the Assyrians, Greeks, Armenians, Romans, Byzantines, Ayyubids, Mamluks and Ottomans the majority of the construction as it stands today is thought to originate from the Ayyubid period. An extensive conservation work took place in the 2000s by the Aga Khan Trust for Culture, in collaboration with Aleppo Archeological Society. Dominating the city, the Citadel is part of the Ancient City of Aleppo, a UNESCO World Heritage Site since 1986. During the 2010s, the Citadel received significant damage during the lengthy Battle of Aleppo. It was reopened to the public in early 2018 with repairs to damaged parts underway, though some of the damage will be purposefully preserved as part of the history of the citadel.",
-        "img": "https://wmf.imgix.net/images/b3_SYR_Cit_Aleppo_JPEG_Hero_SYR_Cit_Aleppo.jpg?auto=format,compress&fit=max&w=1024"
-      },
-     {
-        "name": "Krak des Chevaliers",
-        "des": "Krak des Chevaliers is a medieval castle in Syria and one of the most important preserved medieval castles in the world. The site was first inhabited in the 11th century by Kurdish troops garrisoned there by the Mirdasids. In 1142 it was given by Raymond II, Count of Tripoli, to the order of the Knights Hospitaller. It remained occupied by them until it was reconquered by the Muslims in 1271.",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Krak_des_Chevaliers_landscape_%28cropped%29.jpg/1920px-Krak_des_Chevaliers_landscape_%28cropped%29.jpg"
-      },
-       {
-        "name": "Sahyun Castle",
-        "des": "Sahyun Castle is a medieval castle in northwestern Syria. It is located 7 km east of Al-Haffah town and 30 km east of the city of Latakia, in high mountainous terrain on a ridge between two deep ravines and surrounded by forest, the site has been fortified since at least the mid 10th century. In 975 the Byzantine Emperor John I Tzimiskes captured the site and it remained under Byzantine control until around 1108. Early in the 12th century the Franks assumed control of the site and it was part of the newly formed Crusader state of the Principality of Antioch. The Crusaders undertook an extensive building programme, giving the castle much of its current appearance. In 1188 it fell to the forces of Saladin after a three-day siege.[1] The castle was again besieged in 1287, this time both defender and belligerent were Mamluks. In 2006, the castles of Qal'at Salah El-Din and Krak des Chevaliers were recognised as a World Heritage Site by UNESCO. The site is owned by the Syrian government. ",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Citadel_of_Salah_Ed-din.jpg/1920px-Citadel_of_Salah_Ed-din.jpg"
-      }
-    ],
-    "castles": "Castles",
-    "mosques": "Mosques",
-    "churches": "Churches",
-    "nature": "Nature",
-    "castlesList": [
-      {
-        "name": "Aleppo Castle",
-        "link": "https://en.wikipedia.org/wiki/Citadel_of_Aleppo"
-      },
-      {
-        "name": "Krak des Chevaliers",
-        "link": "https://en.wikipedia.org/wiki/Krak_des_Chevaliers"
-  
-      },
-      {
-        "name": "Sahyun Castle",
-        "link": "https://en.wikipedia.org/wiki/Sahyun_Castle"
-  
-      },
-      {
-        "name": "Citadel of Damascus",
-        "link": "https://en.wikipedia.org/wiki/Citadel_of_Damascus"
-  
-      },
-      {
-        "name": "Margat",
-        "link": "https://en.wikipedia.org/wiki/Margat"
-  
-      },
-      {
-        "name": "Jabaar Castle",
-        "link": "https://en.wikipedia.org/wiki/Qal%27at_Ja%27bar"
-  
-      },
-      {
-        "name": "Al-Madiq Castle",
-        "link": "https://en.wikipedia.org/wiki/Qalaat_al-Madiq"
-  
-      }
-    ],
-    "mosquesList": [
-      {
-        "name": "Umayyad Mosque",
-        "link": "https://en.wikipedia.org/wiki/Umayyad_Mosque"
-      },
-      {
-        "name": "Khalid ibn al-Walid Mosque",
-        "link": "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid_Mosque"
-  
-      },
-      {
-        "name": "Sulaymaniyya Takiyya",
-        "link": "https://en.wikipedia.org/wiki/Sulaymaniyya_Takiyya"
-  
-      },
-      {
-        "name": "Nur al-Din Mosque",
-        "link": "https://en.wikipedia.org/wiki/Nur_al-Din_Mosque"
-  
-      }
-    ],
-    "churchesList": [
+  "home": "Home",
+  "about": "About",
+  "contact": "Contact Us",
+  "tourism": "Tourism",
+  "welcome": "Welcome To Syria",
+  "des": "Nature And Civilizations",
+  "discover": "Discover Syria",
+  "old": [
+    {
+      "name": "Citadel of Aleppo",
+      "des": "The Citadel of Aleppo is a large medieval fortified palace in the centre of the old city of Aleppo, northern Syria. It is considered to be one of the oldest and largest castles in the world. Usage of the Citadel hill dates back at least to the middle of the 3rd millennium BC. Occupied by many civilizations over time including the Assyrians, Greeks, Armenians, Romans, Byzantines, Ayyubids, Mamluks and Ottomans the majority of the construction as it stands today is thought to originate from the Ayyubid period. An extensive conservation work took place in the 2000s by the Aga Khan Trust for Culture, in collaboration with Aleppo Archeological Society. Dominating the city, the Citadel is part of the Ancient City of Aleppo, a UNESCO World Heritage Site since 1986. During the 2010s, the Citadel received significant damage during the lengthy Battle of Aleppo. It was reopened to the public in early 2018 with repairs to damaged parts underway, though some of the damage will be purposefully preserved as part of the history of the citadel.",
+      "img": "https://wmf.imgix.net/images/b3_SYR_Cit_Aleppo_JPEG_Hero_SYR_Cit_Aleppo.jpg?auto=format,compress&fit=max&w=1024"
+    },
+    {
+      "name": "Krak des Chevaliers",
+      "des": "Krak des Chevaliers is a medieval castle in Syria and one of the most important preserved medieval castles in the world. The site was first inhabited in the 11th century by Kurdish troops garrisoned there by the Mirdasids. In 1142 it was given by Raymond II, Count of Tripoli, to the order of the Knights Hospitaller. It remained occupied by them until it was reconquered by the Muslims in 1271.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Krak_des_Chevaliers_landscape_%28cropped%29.jpg/1920px-Krak_des_Chevaliers_landscape_%28cropped%29.jpg"
+    },
+    {
+      "name": "Sahyun Castle",
+      "des": "Sahyun Castle is a medieval castle in northwestern Syria. It is located 7 km east of Al-Haffah town and 30 km east of the city of Latakia, in high mountainous terrain on a ridge between two deep ravines and surrounded by forest, the site has been fortified since at least the mid 10th century. In 975 the Byzantine Emperor John I Tzimiskes captured the site and it remained under Byzantine control until around 1108. Early in the 12th century the Franks assumed control of the site and it was part of the newly formed Crusader state of the Principality of Antioch. The Crusaders undertook an extensive building programme, giving the castle much of its current appearance. In 1188 it fell to the forces of Saladin after a three-day siege.[1] The castle was again besieged in 1287, this time both defender and belligerent were Mamluks. In 2006, the castles of Qal'at Salah El-Din and Krak des Chevaliers were recognised as a World Heritage Site by UNESCO. The site is owned by the Syrian government. ",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Citadel_of_Salah_Ed-din.jpg/1920px-Citadel_of_Salah_Ed-din.jpg"
+    }
+  ],
+  "castles": "Old Places",
+  "mosques": "Mosques",
+  "churches": "Churches",
+  "nature": "Nature",
+  "castlesList": [
+    {
+      "name": "Aleppo Castle",
+      "link": "https://en.wikipedia.org/wiki/Citadel_of_Aleppo"
+    },
+    {
+      "name": "Krak des Chevaliers",
+      "link": "https://en.wikipedia.org/wiki/Krak_des_Chevaliers"
+    },
+    {
+      "name": "Sahyun Castle",
+      "link": "https://en.wikipedia.org/wiki/Sahyun_Castle"
+    },
+    {
+      "name": "Citadel of Damascus",
+      "link": "https://en.wikipedia.org/wiki/Citadel_of_Damascus"
+    },
+    {
+      "name": "Margat",
+      "link": "https://en.wikipedia.org/wiki/Margat"
+    },
+    {
+      "name": "Jabaar Castle",
+      "link": "https://en.wikipedia.org/wiki/Qal%27at_Ja%27bar"
+    },
+    {
+      "name": "Al-Madiq Castle",
+      "link": "https://en.wikipedia.org/wiki/Qalaat_al-Madiq"
+    }
+  ],
+  "mosquesList": [
+    {
+      "name": "Umayyad Mosque",
+      "link": "https://en.wikipedia.org/wiki/Umayyad_Mosque"
+    },
+    {
+      "name": "Khalid ibn al-Walid Mosque",
+      "link": "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid_Mosque"
+    },
+    {
+      "name": "Sulaymaniyya Takiyya",
+      "link": "https://en.wikipedia.org/wiki/Sulaymaniyya_Takiyya"
+    },
+    {
+      "name": "Nur al-Din Mosque",
+      "link": "https://en.wikipedia.org/wiki/Nur_al-Din_Mosque"
+    }
+  ],
+  "churchesList": [
     {
       "name": "Simeon Stylites",
       "link": "https://en.wikipedia.org/wiki/Church_of_Saint_Simeon_Stylites"
@@ -107,12 +98,248 @@
       "link": "https://en.wikipedia.org/wiki/Convent_of_Saint_Thecla_(Maaloula)"
     }
   ],
-  "Homs":[
-    {"id": 1, "lat": 34.736796994734185, "lng": 36.71582848999782, "type": "mosque" },
-    {"id": 2, "lat": 34.758672718865576, "lng": 36.29463303022307, "type": "castle" },
-    {"id": 3, "lat": 34.57167685281546, "lng": 38.2898373552371, "type": "castle" },
-    {"id": 4, "lat": 34.83517609735017, "lng": 36.86589766974049, "type": "castle" },
-    {"id": 5, "lat": 34.23609685093386, "lng": 37.224991813873174, "type": "churches" },
-    {"id": 6, "lat": 34.729325308729194, "lng": 36.71984124020588, "type": "churches" }
+  "discoverPlaces": [
+    {
+      "id": 1,
+      "name": "Khaled Ibn Al-Walid Mosque",
+      "lat": 34.736796994734185,
+      "lng": 36.71582848999782,
+      "type": "mosque"
+    },
+    {
+      "id": 2,
+      "name": "Krak des Chevaliers",
+      "lat": 34.758672718865576,
+      "lng": 36.29463303022307,
+      "type": "castle"
+    },
+    {
+      "id": 3,
+      "name": "Palmyra",
+      "lat": 34.57167685281546,
+      "lng": 38.2898373552371,
+      "type": "castle"
+    },
+    {
+      "id": 4,
+      "name": "Qatna Archeological Site",
+      "lat": 34.83517609735017,
+      "lng": 36.86589766974049,
+      "type": "castle"
+    },
+    {
+      "id": 5,
+      "name": "Monastery of St. Elian",
+      "lat": 34.23609685093386,
+      "lng": 37.224991813873174,
+      "type": "churches"
+    },
+    {
+      "id": 6,
+      "name": "Um Al Zenar Church",
+      "lat": 34.729325308729194,
+      "lng": 36.71984124020588,
+      "type": "churches"
+    },
+    {
+      "id": 7,
+      "name": "Castle of Aleppo",
+      "lat": 36.199634954914536,
+      "lng": 37.1630003121152,
+      "type": "castle"
+    },
+    {
+      "id": 8,
+      "name": "The Umayyad Mosque",
+      "lat": 36.19955783558097,
+      "lng": 37.15685300845336,
+      "type": "mosque"
+    },
+    {
+      "id": 9,
+      "name": "Armenian Forty Martyrs Cathedral",
+      "lat": 36.20616245795342,
+      "lng": 37.15526587314695,
+      "type": "churches"
+    },
+    {
+      "id": 10,
+      "name": "St. Simeon Baptistery",
+      "lat": 36.33242171287732,
+      "lng": 36.84326854177375,
+      "type": "castle"
+    },
+    {
+      "id": 11,
+      "name": "Ain Dara",
+      "lat": 36.45949170966121,
+      "lng": 36.852284725617854,
+      "type": "castle"
+    },
+    {
+      "id": 12,
+      "name": "Cyrrhus",
+      "lat": 36.616562104321716,
+      "lng": 36.93652406430334,
+      "type": "castle"
+    },
+    {
+      "id": 13,
+      "name": "Saladin Citadel",
+      "lat": 35.596181150448594,
+      "lng": 36.05738626903014,
+      "type": "castle"
+    },
+    {
+      "id": 14,
+      "name": "Ugarit",
+      "lat": 35.60222370319752,
+      "lng": 35.78505009285952,
+      "type": "castle"
+    },
+    {
+      "id": 15,
+      "name": "Margat Castle",
+      "lat": 35.15111564179859,
+      "lng": 35.949452481396776,
+      "type": "castle"
+    },
+    {
+      "id": 16,
+      "name": "Al-Kahf Castle",
+      "lat": 35.044831913452406,
+      "lng": 36.083055133210074,
+      "type": "castle"
+    },
+    {
+      "id": 17,
+      "name": "Hosn Suleiman",
+      "lat": 34.93040674189269,
+      "lng": 36.24528055087749,
+      "type": "castle"
+    },
+    {
+      "id": 18,
+      "name": "Amrit",
+      "lat": 34.8389025172828,
+      "lng": 35.90692012332808,
+      "type": "castle"
+    },
+    {
+      "id": 19,
+      "name": "Citadel of Arwad",
+      "lat": 34.85604899074056,
+      "lng": 35.858573893312304,
+      "type": "castle"
+    },
+    {
+      "id": 20,
+      "name": "Castle roe",
+      "lat": 34.81202742736245,
+      "lng": 35.970380423458096,
+      "type": "castle"
+    },
+    {
+      "id": 21,
+      "name": "Khawabi",
+      "lat": 34.97282277547203,
+      "lng": 36.00218872578407,
+      "type": "castle"
+    },
+    {
+      "id": 22,
+      "name": "Ebla Citadel",
+      "lat": 35.799005253573206,
+      "lng": 36.7987933611615,
+      "type": "castle"
+    },
+    {
+      "id": 23,
+      "name": "Qalb Loze",
+      "lat": 36.16954594117208,
+      "lng": 36.58073906585107,
+      "type": "churches"
+    },
+    {
+      "id": 24,
+      "name": "Harim citadel",
+      "lat": 36.207657204602704,
+      "lng": 36.51924352428139,
+      "type": "castle"
+    },
+    {
+      "id": 25,
+      "name": "Norias of Hama",
+      "lat": 35.135321697001615,
+      "lng": 36.75306386770207,
+      "type": "castle"
+    },
+    {
+      "id": 26,
+      "name": "Azm Palace",
+      "lat": 35.134141872911925,
+      "lng": 36.75358913607538,
+      "type": "castle"
+    },
+    {
+      "id": 27,
+      "name": "Apameia",
+      "lat": 35.42060735407328,
+      "lng": 36.401314600782364,
+      "type": "castle"
+    },
+    {
+      "id": 28,
+      "name": "Ibn Wardan Qastel",
+      "lat": 35.3734870474216,
+      "lng": 37.24743453313277,
+      "type": "castle"
+    },
+    {
+      "id": 29,
+      "name": "Shezer Castle",
+      "lat": 35.26544453175708,
+      "lng": 36.56634729674215,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 30,
+      "name": "Masyaf Castle",
+      "lat": 35.06613540565015,
+      "lng": 36.3431790516586,
+      "type": "castle"
+    },
+    {
+      "id": 31,
+      "name": "Jabaar Castle",
+      "lat": 35.89730702368276,
+      "lng": 38.48119139676328,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 32,
+      "name": "Resafa",
+      "lat": 35.6280013152059,
+      "lng": 38.758095952821066,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 33,
+      "name": "Baghdad Door",
+      "lat": 35.94315136290065,
+      "lng": 39.02717783775936,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 34,
+      "name": "Qasr al-Banat",
+      "lat": 35.948242631100236,
+      "lng": 39.026200084170114,
+      "type": "castle"
+    }
   ]
 }

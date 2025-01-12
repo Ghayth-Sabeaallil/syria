@@ -47,7 +47,7 @@ const InfoContainer = () => {
                     {/* Main clickable div */}
                     <div
                         onClick={() => handleClick(index, item.list)}
-                        className={`bg-slate-100 border-2 border-black group flex flex-col gap-3 justify-center items-center bg-white rounded-tl-lg rounded-tr-lg shadow-lg w-4/6 h-[25vh] text-lg sm:text-lg md:text-3xl font-bold text-gray-800 cursor-pointer ${item.list.length === 0 ? "opacity-50 cursor-not-allowed" : ""
+                        className={`bg-slate-100 border-2 border-black group flex flex-col gap-3 justify-center items-center bg-white rounded-tl-lg rounded-tr-lg shadow-lg w-4/6 h-[25vh] text-lg sm:text-lg md:text-3xl font-bold text-gray-800 cursor-pointer font-Kufi ${item.list.length === 0 ? "opacity-50 cursor-not-allowed" : ""
                             }`}
                     >
                         <div className="transform transition-transform duration-200 group-hover:scale-125">
