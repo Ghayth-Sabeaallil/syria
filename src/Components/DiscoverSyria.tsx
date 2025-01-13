@@ -17,7 +17,7 @@ export const DiscoverSyria = () => {
                 <div className="flex flex-col justify-center items-end gap-5  z-[1] text-right">
                     <p className="animate-[animationRight_2s_ease-out] text-white font-Amiri leading-[1.45] font-extrabold text-lg sm:text-lg md:text-3xl">{t('welcome')}</p>
                     <p className="animate-[animationLeft_2s_ease-out]  text-white font-Amiri leading-[1.45] font-extrabold text-lg sm:text-lg md:text-3xl">{t('des')}</p>
-                    <Link to="/state"><Button text={`<< ${t('discover')}`} /></Link>
+                    <Link to="/discover"><Button text={`<< ${t('discover')}`} /></Link>
                 </div>
             </div></div>
 

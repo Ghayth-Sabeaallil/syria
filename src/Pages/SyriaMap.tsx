@@ -4,13 +4,11 @@ import Header from '../Components/Header';
 import { useTranslation } from 'react-i18next';
 import MapGoogle from '../Components/MapGoogle';
 
-function State() {
+function SyriaMap() {
     const { i18n, t } = useTranslation();
     useEffect(() => {
         document.documentElement.dir = i18n.language === 'ar' ? 'ltr' : 'rtl';
         document.title = `${t('discover')}`
-
-
     }, [i18n.language]);
     return (
         <>
@@ -23,4 +21,4 @@ function State() {
     )
 }
 
-export default State
+export default SyriaMap

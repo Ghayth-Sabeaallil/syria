@@ -28,7 +28,7 @@ const Header = () => {
                     <div className="hidden md:flex gap-4">
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('about')}<IoMdInformationCircleOutline size={30} /></div>
                         <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('contact')}<FaHeadphones size={30} /></div>
-                        <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('tourism')}<MdOutlineTravelExplore size={30} /></div>
+                        <Link to={"/discover"}> <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('tourism')}<MdOutlineTravelExplore size={30} /></div></Link>
                         <Link to={"/"}>
                             <div className="text-xl font-mono cursor-pointer p-3 text-black border-black font-bold duration-500 hover:scale-125 hover:font-extrabold flex gap-2">{t('home')}<GoHome size={30} /></div>
                         </Link>

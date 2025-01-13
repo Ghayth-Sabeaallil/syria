@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 const Home = lazy(() => import('./Pages/Home'))
-const State = lazy(() => import('./Pages/State'))
+const SyriaMap = lazy(() => import('./Pages/SyriaMap'))
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/state" Component={State} />
+        <Route path="/discover" Component={SyriaMap} />
       </Routes>
     </Router>
   );

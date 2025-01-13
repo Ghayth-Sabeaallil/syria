@@ -3,8 +3,10 @@ export type StateProps = {
     isClicked?: boolean | undefined;
 };
 
-export type CardProps = {
+export type StateInfoProps = {
+    id?: string,
     name?: string;
     description?: string;
-    image?: string
+    people?: number,
+    area?: number,
 };

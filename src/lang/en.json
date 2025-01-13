@@ -341,5 +341,106 @@
       "lng": 39.026200084170114,
       "type": "castle"
     }
-  ]
+  ],
+  "StateInfo":[
+    {
+        "id": "Damascus",
+        "name": "Damascus",
+        "description": "The capital of Syria and the oldest continuously inhabited capital in history, a political and cultural hub",
+        "area": 105,
+        "people": 1750000
+    },
+    {
+        "id": "RefDamascus",
+        "name": "Rif Dimashq (Damascus Countryside)",
+        "description": "Surrounds the capital Damascus with diverse geography including plains and mountains",
+        "area": 18018,
+        "people": 2779000
+    },
+    {
+        "id": "Aleppo",
+        "name": "Aleppo",
+        "description": "The largest city in Syria, known for its ancient history and traditional industries",
+        "area": 19000,
+        "people": 2000000
+    },
+    {
+        "id": "Homs",
+        "name": "Homs",
+        "description": "Located in central Syria, known for its cultural diversity and strategic location",
+        "area": 42223,
+        "people": 1800000
+    },
+    {
+        "id": "Hama",
+        "name": "Hama",
+        "description": "Famous for its waterwheels (Norias) and rich agricultural heritage",
+        "area": 8880,
+        "people": 1550000
+    },
+    {
+        "id": "Latakia",
+        "name": "Latakia",
+        "description": "A coastal city and major port, renowned for tourism and natural beauty",
+        "area": 2297,
+        "people": 1300000
+    },
+    {
+        "id": "Tartus",
+        "name": "Tartus",
+        "description": "A quiet coastal city, known for fishing and agriculture",
+        "area": 1890,
+        "people": 930000
+    },
+    {
+        "id": "Idlib",
+        "name": "Idlib",
+        "description": "Known for its fertile lands and abundant olive groves",
+        "area": 6100,
+        "people": 1600000
+    },
+    {
+        "id": "Daraa",
+        "name": "Daraa",
+        "description": "Located in the south and known as the birthplace of the Syrian revolution",
+        "area": 3730,
+        "people": 1000000
+    },
+    {
+        "id": "Suwayda",
+        "name": "As-Suwayda",
+        "description": "Located in the southeast, characterized by mountainous terrain",
+        "area": 5550,
+        "people": 750000
+    },
+    {
+        "id": "Quneitra",
+        "name": "Quneitra",
+        "description": "Located near the Golan Heights, features stunning natural landscapes",
+        "area": 1200,
+        "people": 90000
+    },
+    {
+        "id": "DayrAzZawr",
+        "name": "Deir ez-Zor",
+        "description": "Located along the Euphrates River, known for oil and agriculture",
+        "area": 33400,
+        "people": 1400000
+    },
+    {
+        "id": "Raqqah",
+        "name": "Raqqa",
+        "description": "Located in northern Syria, known for its agricultural activities",
+        "area": 19618,
+        "people": 1000000
+    },
+    {
+        "id": "Hasaka",
+        "name": "Al-Hasakah",
+        "description": "Located in northeastern Syria, known for its cultural diversity",
+        "area": 23334,
+        "people": 1550000
+    }
+]
+
 }
