@@ -341,6 +341,113 @@
       "lng": 39.026200084170114,
       "type": "castle"
     }
+    ,
+    {
+      "id": 35,
+      "name": "Kingdom of Mari",
+      "lat": 34.54951443186663,
+      "lng": 40.890004703930664,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 36,
+      "name": "Dura Europos",
+      "lat": 34.74918732025183,
+      "lng": 40.72983981001128,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 37,
+      "name": "Halabiye",
+      "lat": 35.68954415142649,
+      "lng": 39.822449750657285,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 38,
+      "name": "Al Rahba Castle",
+      "lat": 35.005266873596256,
+      "lng": 40.42291244741592,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 39,
+      "name": "The Umayyad Mosque",
+      "lat": 33.51162649128323,
+      "lng": 36.306557835412086,
+      "type": "mosque"
+    }
+    ,
+    {
+      "id": 40,
+      "name": "Damascus Castle",
+      "lat": 33.51158999055032,
+      "lng": 36.30114523201926,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 41,
+      "name": "Al Azem Palace",
+      "lat": 33.51027741722308,
+      "lng": 36.306663219208616,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 42,
+      "name": "Hanania Church",
+      "lat": 33.51133108408951,
+      "lng": 36.31756248220886,
+      "type": "churches"
+    } ,
+    {
+      "id": 43,
+      "name": "Monastero Saint Takla",
+      "lat": 33.847318136482016,
+      "lng": 36.54672378239586,
+      "type": "churches"
+    },
+    {
+      "id": 44,
+      "name": "Deir Mar Musa el-Habashi",
+      "lat": 34.02186819224202,
+      "lng": 36.84235035825749,
+      "type": "churches"
+    },
+    {
+      "id": 45,
+      "name": "Busra Roman Theater",
+      "lat": 32.51775603107656,
+      "lng": 36.48138068632501,
+      "type": "castle"
+    },
+    {
+      "id": 46,
+      "name": "Shahba Theater",
+      "lat": 32.853762922757724,
+      "lng": 36.62685188579836,
+      "type": "castle"
+    },
+    {
+      "id": 47,
+      "name": "Shahba Castle",
+      "lat": 32.850968897248116,
+      "lng": 36.62073644961626,
+      "type": "castle"
+    }
+    ,
+    {
+      "id": 48,
+      "name": "Salkhad Citadel",
+      "lat": 32.494268483741195,
+      "lng": 36.710380778745225,
+      "type": "castle"
+    }
   ],
   "StateInfo":[
     {
