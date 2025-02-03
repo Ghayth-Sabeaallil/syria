@@ -18,7 +18,7 @@ const MapGoogle = () => {
         return Array.isArray(list) ? (list as ListProps[]) : [];
     };
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: "AIzaSyCAaqJaLyogLbsWinHdWEoG3x3TS-EDFYI",
+        googleMapsApiKey: import.meta.env.VITE_API_KEY,
     });
 
     const [showMarker, setShowMarker] = useState(false);
