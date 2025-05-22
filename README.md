@@ -13,7 +13,8 @@ An interactive web-based map of Syria built using SVG, where each state is click
 
 ## 🔧 How to Use
 
-    Clone the repository:
-
+```bash
 git clone https://github.com/your-username/syria-map.git
 cd syria-map
+npm run dev
+```
